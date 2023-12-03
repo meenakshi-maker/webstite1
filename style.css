@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background-color: gray;
+    opacity: 0.9;
+    color:black;
+    text-align: center;
+    padding: 1em 0;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: lightblue; /* Adjust the background color as needed */
+    color: black; /* Adjust the text color as needed */
+    width: 100%; /* Ensure the header takes full width */
+    margin: 0; /* Remove any default margin */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+.icons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.icons li {
+    margin: 0 5px;
+}
+
+/* Add styles for the logo */
+header img {
+    width: 60px;
+    height: 60px;
+    float: left;
+    border: 1px solid lightblue;
+    border-radius: 100px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+button {
+    background-color: blue;
+    border: 1px solid blue;
+    border-radius: 20px;
+    color: lightblue;
+    font-size: 20px;
+    padding: 10px;
+    width: 100px;
+}
+
+.mainBox {
+    background-image: url(images/pexels.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set to full viewport height */
+    width: 100%;
+    color: black;
+}
+
+.mainBox2 {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Set to full viewport height */
+    width: 100%;
+    color: blue;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.fields {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on small screens */
+}
+
+.fields li {
+    list-style: none;
+    margin: 10px;
+    width: 200px;
+    padding: 20px;
+    text-align: center; /* Center text within the list item */
+}
+
+.fields li input {
+    width: 100%; /* Make input take full width of its parent */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+h1 {
+    font-size: 37px;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
